@@ -1,0 +1,14 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: golang, tag: 1.6-alpine}
+
+inputs:
+- name: resource-tutorial
+- name: luban-api
+  path: gopath/src/github.ibm.com/bluemix/luban-api
+
+run:
+  path: resource-tutorial/luban-api/task_run_tests.sh

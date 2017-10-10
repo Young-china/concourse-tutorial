@@ -1,0 +1,22 @@
+---
+resources:
+- name: resource-tutorial
+  type: git
+  source:
+    uri: https://github.com/Young-china/concourse-tutorial
+- name: luban-api
+  type: git
+  source:
+    uri: git@github.ibm.com:yangcd/luban-api.git
+    branch: master
+    private_key: ((my-product-github-private-key))
+
+jobs:
+- name: job-test-app
+  public: true
+  plan:
+  - get: resource-tutorial
+  - get: luban-api
+    trigger: true
+  - task: luban-api-tests
+    file: resource-tutorial/luban-api/task_run_tests.yml
