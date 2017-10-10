@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e
 
@@ -8,6 +8,5 @@ set -e
 pwd
 export GOPATH=$(pwd)/gopath:$(pwd)/gopath/src/github.ibm.com/bluemix/luban-api
 cd gopath/src/github.ibm.com/bluemix/luban-api/
-ls
-curl https://glide.sh/get | sh
-make deps
+
+go get gopkg.in/yaml.v2
