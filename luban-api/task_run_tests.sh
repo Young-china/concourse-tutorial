@@ -8,5 +8,6 @@ set -e
 pwd
 export GOPATH=$(pwd)/gopath:$(pwd)/gopath/src/github.ibm.com/bluemix/luban-api
 cd gopath/src/github.ibm.com/bluemix/luban-api/
-
+ls
+curl https://glide.sh/get | sh
 make deps
