@@ -6,7 +6,7 @@ set -e
 # application input is in gopath/src/github.com/cloudfoundry-community/simple-go-web-app folder
 # $GOPATH is gopath/ folder
 pwd
-export GOPATH=$(pwd)/gopath:$(pwd)/gopath/src/github.com/cloudfoundry-community/simple-go-web-app/Godeps/_workspace
-cd gopath/src/github.com/cloudfoundry-community/simple-go-web-app/
+export GOPATH=$(pwd)/gopath:$(pwd)/gopath/src/github.ibm.com/bluemix/luban-api
+cd gopath/src/github.ibm.com/bluemix/luban-api/
 
-go test ./...
+make deps
