@@ -11,4 +11,4 @@ inputs:
   path: gopath/src/github.ibm.com/bluemix/luban-api
 
 run:
-  path: resource-tutorial/luban-api/task_run_tests.sh
+  path: resource-tutorial/luban-api_test/task_run_tests.sh

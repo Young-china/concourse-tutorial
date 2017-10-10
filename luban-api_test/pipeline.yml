@@ -19,4 +19,4 @@ jobs:
   - get: luban-api
     trigger: true
   - task: luban-api-tests
-    file: resource-tutorial/luban-api/task_run_tests.yml
+    file: resource-tutorial/luban-api_test/task_run_tests.yml
