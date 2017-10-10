@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-set -e
+set -e -x
 
 # task script is in resource-tutorial/10_job_inputs/ folder
 # application input is in gopath/src/github.com/cloudfoundry-community/simple-go-web-app folder
